@@ -150,13 +150,13 @@ function paragrafOlustur(wordsArr, makeSentences, transformSentences) {
   const sentences = transformSentences(wordsArr, ' ');
   return makeSentences(sentences[1], sentences[3], sentences[5], sentences[7], sentences[9]);
 }
-console.log(paragrafOlustur(cumleler, cumleKur, cumlelereDonustur));
+//console.log(paragrafOlustur(cumleler, cumleKur, cumlelereDonustur));
 /* 	GÖREV 3:
     Yukarıda isimleri sebzeler ve meyveler olan 2 dizi bulunmaktadır. Bu dizileri kullanarak aşağıdaki görevleri tamamlayın.
       3a. meyveler dizisinin ilk ve son elemanlarını diziden çıkartın. (.pop ve .shift metodlarını kullanın)
  */
 //3a çözümü
-/* kodlar buraya */
+meyveler.pop(); meyveler.shift();
 
 /* 			3b.  Bir tavşan ve bir kirpi arkadaşlar sebzeler dizimizin peşine düştü. Tavşan => 🐇 , Kirpi=> 🦔 , 
 Tavşanla kirpi sebzeleri ele geçirmek için bir plan kurdular. Tavşan diziye önden saldıracak, kirpi ise 
