@@ -132,7 +132,7 @@ function cumlelereDonustur(wordsArr, separator = ',') {
 
   return wordsArr.map((arr) => arr.join(separator));
 }
-console.log(cumlelereDonustur(cumleler, ' '));
+//console.log(cumlelereDonustur(cumleler, ' '));
 /* GÖREV 2:
     paragrafOlustur fonksiyonuna aşağıdakileri uygulayın.
       1. cumleler dizisi fonksiyonun birinci parametresi olarak alınacak
@@ -146,10 +146,11 @@ console.log(cumlelereDonustur(cumleler, ' '));
       6. Oluşturulan paragraf döndürülecek
   */
 
-function paragrafOlustur(/* kodlar buraya */) {
-  /* kodlar buraya */
+function paragrafOlustur(wordsArr, makeSentences, transformSentences) {
+  const sentences = transformSentences(wordsArr, ' ');
+  return makeSentences(sentences[1], sentences[3], sentences[5], sentences[7], sentences[9]);
 }
-
+console.log(paragrafOlustur(cumleler, cumleKur, cumlelereDonustur));
 /* 	GÖREV 3:
     Yukarıda isimleri sebzeler ve meyveler olan 2 dizi bulunmaktadır. Bu dizileri kullanarak aşağıdaki görevleri tamamlayın.
       3a. meyveler dizisinin ilk ve son elemanlarını diziden çıkartın. (.pop ve .shift metodlarını kullanın)
