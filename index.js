@@ -170,9 +170,7 @@ sebzeler.unshift("🐇"); sebzeler.push("🦔");
 elemanlara denk gelecek şekilde, iki diziyi birleştirip sonucu manav dizisine aktarın. (.concat metodu)
  */
 //3c çözümü
-/* kodlar buraya */
-
-var manav;
+var manav = meyveler.concat(sebzeler);
 
 /* 	GÖREV 4:
     Yeni kurulmuş bir mesajlaşma startup firması atılan mesajları emojilerle zenginleştirmek istiyor. 
